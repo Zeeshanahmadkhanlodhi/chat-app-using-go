@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0%;
+    background-color: #E4E1D9;
+  
+}
+.app{
+    width: 90vw;
+    height: 90vh;
+    background-color: #F2EFE7;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.chat-messages{
+    margin-left: 4rem;
+    width: 20px;
+}
+.nav-wrapper {
+    height: 40px;
+   margin-left: 3rem;
+   margin-top: 1rem;
+}
+
+.nav-wrapper  > a {
+    text-decoration: none;
+   
+}
+
+
+ main {
+    flex: 1 0 auto;
+} 
+.inputs{
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+#chat-messages {
+    min-height: 10vh;
+    height: 60vh;
+    width: 85vw;
+    overflow-y: scroll;
+    background-color: white;
+    margin: auto;
+   
+}
+input{
+    width: 50vw;
+    height: 20px;
+    margin-bottom: 5px;
+}
+button{
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 24px;
+}
+
+.chip{
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+.chip img {
+    width: 30px;
+    border-radius: 100%;
+
+}
+
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color:#ebde8e;
+    border-radius: .5rem;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: whitesmoke;
+    border-radius: .5rem;
+}
