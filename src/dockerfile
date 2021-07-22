@@ -1,0 +1,19 @@
+# Sample Realtime chat application 
+FROM golang:1.16-alpine
+
+WORKDIR /src/
+COPY go.mod   /src/
+COPY go.sum   /src/
+
+RUN go mod download
+COPY *.go ./
+
+
+RUN go build -o /docker-chat
+
+EXPOSE 8080
+
+CMD [ "/docker-chat" ]
+
+
+
